@@ -71,32 +71,3 @@ open ur local host
 | `/music/{id}`     | PUT    | Update a song/album          |
 | `/music/{id}`     | DELETE | Delete a song/album          |
 
-
-## Folder Structure
-
-├── app/
-│   ├── Http/
-│   │   └── Controllers/
-│   │       ├── MusicController.php
-│   │       ├── MusicDataController.php
-│   │       └── HomeController.php
-│   └── Models/
-│       ├── Album.php
-│       └── MusicData.php
-│
-├── resources/
-│   └── views/
-│       ├── albums/
-│       │   ├── index.blade.php
-│       │   └── show.blade.php
-│       ├── music/
-│       │   └── create.blade.php
-│       ├── layouts/
-│       │   └── app.blade.php
-│       ├── partials/
-│       │   └── nav.blade.php
-│       ├── home.blade.php
-│       └── about.blade.php
-│
-├── routes/
-│   └── web.php
