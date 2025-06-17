@@ -8,7 +8,6 @@ class MusicController extends Controller
 {
     public function albumsList()
     {
-        // Alleen albums ophalen, zonder nummers
         $albums = Album::orderBy('name')->get();
 
         return view('albums.index', compact('albums'));
@@ -16,7 +15,6 @@ class MusicController extends Controller
 
     public function showAlbum(Album $album)
     {
-        // Laad nummers van dit album, gesorteerd op NoAlbum
         $album->load(['songs' => function ($query) {
             $query->orderBy('NoAlbum');
         }]);
