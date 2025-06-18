@@ -63,8 +63,8 @@ open ur local host
 |-------------------|--------|------------------------------|
 | `/`               | GET    | Homepage                     |
 | `/about`          | GET    | About page                   |
-| `/albums`         | GET    | View all albums              |
-| `/albums/{album}` | GET    | View album with songs        |
+| `/albums`          | GET    | View all albums              |
+| `/albums/{album_id}` | GET    | View album with songs        |
 | `/music/create`   | GET    | Add new album + song form    |
 | `/music`          | POST   | Store new song and album     |
 | `/music/{id}/edit`| GET    | Edit a song/album            |
